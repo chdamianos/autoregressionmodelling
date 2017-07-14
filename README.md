@@ -32,9 +32,15 @@ Variable: R_HOME Values: C:\Program Files\R\R-3.3.1
 Variable: R_USER Values: C:\Users\username\Anaconda2\Lib\site-packages\rpy2  
 If you don't have admin access to your PC type "Edit environment variables for your account" into the Windows start menu to change your user account paths without admin privileges  
 Alternatively you can temporarily set paths from within Python using  
+
+```
+#!python
+
 import os  
 os.environ['R_HOME'] = 'C:/xxxxxxxx/R/R-3.2.2'   
-os.environ['R_USER'] = 'C:/xxxxxxxxxxxxxx/Anaconda2/Lib/site-packages/rpy2'   
+os.environ['R_USER'] = 'C:/xxxxxxxxxxxxxx/Anaconda2/Lib/site-packages/rpy2' 
+```
+  
 you might need to place this command at the top of every .py file that calls rpy2   
 
 # Algorithm
@@ -43,7 +49,8 @@ Flowchart of the algorithm with some default values:
 
 The main routine is run as follows:  
 ```
-#!    best_model, series_models, series_vars = MainAlgorithm.main_ga(df=data, trgt=target, n_boot=N_GA_BOOT, n_pop=N_GA_POP, ratio_retain=RETAIN, ratio_mut=MUTATE, min_metric=OPT_METRIC, min_gener=MIN_GEN, tol_gen=TOLE_N_GEN, max_gener=MAX_GEN, mult_thrd=MULTI_THREAD, vif_value=VIF_VALUE)
+#!python
+best_model, series_models, series_vars = MainAlgorithm.main_ga(df=data, trgt=target, n_boot=N_GA_BOOT, n_pop=N_GA_POP, ratio_retain=RETAIN, ratio_mut=MUTATE, min_metric=OPT_METRIC, min_gener=MIN_GEN, tol_gen=TOLE_N_GEN, max_gener=MAX_GEN, mult_thrd=MULTI_THREAD, vif_value=VIF_VALUE)
 ```  
 The output is best_model: python list with the best model parameters from the algorithm, series_models: a pandas series with all the models generated in order of percentage of selection, series_vars: a pandas series with all the variables selected by all the models in order of percentage of selection  
 
