@@ -26,7 +26,7 @@ with the 'VGAM' and 'HandTill2001' libraries installed
 ### rpy2 installation
 I recommend installing rpy2 from http://www.lfd.uci.edu/~gohlke/pythonlibs/#rpy2  
 Select the rpy2‑2.7.8‑cp27‑none‑win_amd64.whl file to install  
-Also you will need to add these paths (environment variables) to your user account 
+Also you will need to add these paths (environment variables) to your user account  
 For example: (change Values to match your configuration)  
 Variable: R_HOME Values: C:\Program Files\R\R-3.3.1  
 Variable: R_USER Values: C:\Users\username\Anaconda2\Lib\site-packages\rpy2  
