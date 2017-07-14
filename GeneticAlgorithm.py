@@ -1,5 +1,26 @@
 """
 Module containing the functions to implement the genetic algorithm
+
+code author: Damianos Christophides 
+email: chdamianos@gmail.com
+This algorithm has been presented at the 36th Congress of the European Society 
+for Radiotherapy and Oncology
+Citation: Christophides D, Appelt AL, Lilley J, Sebag-Montefiore D. PO-0853: 
+A method for automatic selection of parameters in NTCP modelling. 
+Radiother. Oncol. 2017;123:S463-S464. doi:10.1016/S0167-8140(17)31290-2
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/
 """
 #----------------------------------------------------------------------
 # Import necessary modules

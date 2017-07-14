@@ -1,3 +1,25 @@
+"""
+code author: Damianos Christophides 
+email: chdamianos@gmail.com
+This algorithm has been presented at the 36th Congress of the European Society 
+for Radiotherapy and Oncology
+Citation: Christophides D, Appelt AL, Lilley J, Sebag-Montefiore D. PO-0853: 
+A method for automatic selection of parameters in NTCP modelling. 
+Radiother. Oncol. 2017;123:S463-S464. doi:10.1016/S0167-8140(17)31290-2
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/
+"""
 if __name__ == '__main__':
     #----------------------------------------------------------------------
     # Import necessary modules
@@ -17,7 +39,7 @@ if __name__ == '__main__':
     MULTI_THREAD = True  # boolean to whether or not perform multithreading
     VIF_VALUE = 5.0  # variance inflation factor thershold
     N_GA_POP = 50  # number of individials in population
-    N_GA_BOOT = 100  # number of bootstrap iterations
+    N_GA_BOOT = 3  # number of bootstrap iterations
     #----------------------------------------------------------------------
     # Import data and set target variable to desired column
     # downloaded from http://www.gagolewski.com/resources/data/ordinal-regression/
