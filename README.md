@@ -42,13 +42,25 @@ you might need to place this command at the top of every .py file that calls rpy
 
 The main routine is run as follows:  
 ```
-#!    best_model, series_models, series_vars = MainAlgorithm.main_ga(df=data, trgt=target,              n_boot=N_GA_BOOT, n_pop=N_GA_POP, ratio_retain=RETAIN, ratio_mut=MUTATE,              min_metric=OPT_METRIC, min_gener=MIN_GEN, tol_gen=TOLE_N_GEN,              max_gener=MAX_GEN, mult_thrd=MULTI_THREAD, vif_value=VIF_VALUE)
-
-
+#!    best_model, series_models, series_vars = MainAlgorithm.main_ga(df=data, trgt=target, n_boot=N_GA_BOOT, n_pop=N_GA_POP, ratio_retain=RETAIN, ratio_mut=MUTATE, min_metric=OPT_METRIC, min_gener=MIN_GEN, tol_gen=TOLE_N_GEN, max_gener=MAX_GEN, mult_thrd=MULTI_THREAD, vif_value=VIF_VALUE)
 ```  
 The output is best_model: python list with the best model parameters from the algorithm, series_models: a pandas series with all the models generated in order of percentage of selection, series_vars: a pandas series with all the variables selected by all the models in order of percentage of selection  
 
-It is recommended to run example.py to test if the code wor
+It is recommended to run example.py to test if the code works and better understand how it runs by looking at the comments
+
+# Example
+The ordinal response dataset on wine quality was downloaded from http://www.gagolewski.com/resources/data/ordinal-regression/winequality-red.csv and tested for the example shown in 'example.py'  
+
+The resulting model was:  
+![Model coefficients.png](https://bitbucket.org/repo/yp5MdKd/images/2551485050-Model%20coefficients.png)
+  
+As you can see the automatically generated model has only significant variables (p-value<0.05)
+
+Also a list of the percentage the variables were selected during the algorithm run was produced:  
+![Variables rank.png](https://bitbucket.org/repo/yp5MdKd/images/1839157875-Variables%20rank.png)
+
+As well as the order of percentage selection of the models:  
+![Models rank.png](https://bitbucket.org/repo/yp5MdKd/images/1042504757-Models%20rank.png)
 
 ### Who do I talk to? ###
 
