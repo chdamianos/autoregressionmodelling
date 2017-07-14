@@ -38,6 +38,7 @@ os.environ['R_USER'] = 'C:/xxxxxxxxxxxxxx/Anaconda2/Lib/site-packages/rpy2'
 you might need to place this command at the top of every .py file that calls rpy2   
 
 # Algorithm
+Flowchart of the algorithm with some default values:  
 ![AutoModel.png](https://bitbucket.org/repo/yp5MdKd/images/4102067091-AutoModel.png)  
 
 The main routine is run as follows:  
