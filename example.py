@@ -39,7 +39,7 @@ if __name__ == '__main__':
     MULTI_THREAD = True  # boolean to whether or not perform multithreading
     VIF_VALUE = 5.0  # variance inflation factor thershold
     N_GA_POP = 50  # number of individials in population
-    N_GA_BOOT = 3  # number of bootstrap iterations
+    N_GA_BOOT = 100  # number of bootstrap iterations
     #----------------------------------------------------------------------
     # Import data and set target variable to desired column
     # downloaded from http://www.gagolewski.com/resources/data/ordinal-regression/
