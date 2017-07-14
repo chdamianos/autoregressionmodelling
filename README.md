@@ -62,7 +62,5 @@ Also a list of the percentage the variables were selected during the algorithm r
 As well as the order of percentage selection of the models:  
 ![Models rank.png](https://bitbucket.org/repo/yp5MdKd/images/1042504757-Models%20rank.png)
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+# Further Information
+Contact Damianos Christophides at chdamianos@gmail.com
