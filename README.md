@@ -21,7 +21,7 @@ scipy 0.18.1
 
 You will also need R installed:  
 R 3.3.1
-with the 'VGAM' and 'HandTill2001' libraries installed
+with the 'VGAM' and 'HandTill2001' libraries  
 
 ### rpy2 installation
 I recommend installing rpy2 from http://www.lfd.uci.edu/~gohlke/pythonlibs/#rpy2  
@@ -54,7 +54,7 @@ best_model, series_models, series_vars = MainAlgorithm.main_ga(df=data, trgt=tar
 ```  
 The output is best_model: python list with the best model parameters from the algorithm, series_models: a pandas series with all the models generated in order of percentage of selection, series_vars: a pandas series with all the variables selected by all the models in order of percentage of selection  
 
-It is recommended to run example.py to test if the code works and better understand how it runs by looking at the comments
+It is recommended to run example.py to understand how the code runs by reading the comments  
 
 # Example
 The ordinal response dataset on wine quality was downloaded from http://www.gagolewski.com/resources/data/ordinal-regression/winequality-red.csv and tested for the example shown in 'example.py'  
