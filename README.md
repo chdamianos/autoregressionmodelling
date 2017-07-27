@@ -9,7 +9,7 @@ Citation: Christophides D, Appelt AL, Lilley J, Sebag-Montefiore D. PO-0853: A m
 ### Summary of set up
 To run the code you will need both Python and R installed
 ### Configuration
-Specifically you will need Python 2.7.13 (64bit) with the following modules installed:  
+The code was developed using Python 2.7.13 (64bit) with the following modules installed:  
 pandas 0.19.2  
 scikit-learn 0.17.1  
 numpy 1.11.3  
@@ -20,7 +20,7 @@ statsmodels 0.6.1
 scipy 0.18.1  
 
 You will also need R installed:  
-R 3.3.1
+R 3.3.1 was used in this project  
 with the 'VGAM' and 'HandTill2001' libraries  
 
 ### rpy2 installation
