@@ -9,7 +9,7 @@ Citation: Christophides D, Appelt AL, Lilley J, Sebag-Montefiore D. PO-0853: A m
 ### Summary of set up
 To run the code you will need both Python and R installed
 ### Configuration
-To run the code you will need Python 2.7.13 (64bit) with the following modules installed:  
+Specifically you will need Python 2.7.13 (64bit) with the following modules installed:  
 pandas 0.19.2  
 scikit-learn 0.17.1  
 numpy 1.11.3  
@@ -52,7 +52,7 @@ The main routine is run as follows:
 #!python
 best_model, series_models, series_vars = MainAlgorithm.main_ga(df=data, trgt=target, n_boot=N_GA_BOOT, n_pop=N_GA_POP, ratio_retain=RETAIN, ratio_mut=MUTATE, min_metric=OPT_METRIC, min_gener=MIN_GEN, tol_gen=TOLE_N_GEN, max_gener=MAX_GEN, mult_thrd=MULTI_THREAD, vif_value=VIF_VALUE)
 ```  
-The output is best_model: python list with the best model parameters from the algorithm, series_models: a pandas series with all the models generated in order of percentage of selection, series_vars: a pandas series with all the variables selected by all the models in order of percentage of selection  
+The output is best_model: python list with the best model parameters from the algorithm, series_models: a pandas series with all the models generated in order of percentage of selection, series_vars: a pandas series with all the variables selected, by all the models, in order of percentage of selection  
 
 It is recommended to run example.py to understand how the code runs by reading the comments  
 
