@@ -54,7 +54,7 @@ best_model, series_models, series_vars = MainAlgorithm.main_ga(df=data, trgt=tar
 ```  
 The output is best_model: python list with the best model parameters from the algorithm, series_models: a pandas series with all the models generated in order of percentage of selection, series_vars: a pandas series with all the variables selected, by all the models, in order of percentage of selection  
 
-It is recommended to run example.py to understand how the code runs by reading the comments  
+It is recommended to go through the code and comments in example.py to understand how the algorithm is implemented    
 
 # Example
 The ordinal response dataset on wine quality was downloaded from http://www.gagolewski.com/resources/data/ordinal-regression/winequality-red.csv and tested for the example shown in 'example.py'  
